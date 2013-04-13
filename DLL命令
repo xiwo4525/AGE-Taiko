@@ -1,0 +1,97 @@
+.版本 2
+
+.DLL命令 BASS_ChannelBytes2Seconds, 双精度小数型, "bass.dll", "BASS_ChannelBytes2Seconds"
+    .参数 handle
+    .参数 pos, 长整数型
+
+.DLL命令 BASS_ChannelGetPosition, 长整数型, "bass.dll", "BASS_ChannelGetPosition"
+    .参数 handle
+    .参数 mode
+
+.DLL命令 创建时钟, 短整数型, , "SetTimer", , 开始时钟
+    .参数 句柄, 整数型
+    .参数 时钟ID, 短整数型
+    .参数 间隔时间, 短整数型
+    .参数 子程序指针, 子程序指针
+
+.DLL命令 销毁时钟, 逻辑型, , "KillTimer", , 杀死时钟
+    .参数 句柄, 整数型
+    .参数 时钟ID, 短整数型
+
+.DLL命令 SetClassLong, 整数型, , "SetClassLongA"
+    .参数 hwnd, 整数型
+    .参数 nIndex, 整数型
+    .参数 dwNewLong, 整数型
+
+.DLL命令 BASS_StreamCreateFile, 整数型, "bass.dll", "BASS_StreamCreateFile", , (BASS_StreamCreateFile(BOOL mem, const void *file, QWORD offset, QWORD length, DWORD flags);
+    .参数 mem, 逻辑型
+    .参数 file, 文本型
+    .参数 offset, 长整数型
+    .参数 length, 长整数型
+    .参数 flags, 整数型
+
+.DLL命令 BASS_Init, 逻辑型, "bass.dll", "BASS_Init", , BASS_Init(int device, DWORD freq, DWORD flags, HWND win, const GUID *dsguid);
+    .参数 device
+    .参数 freq
+    .参数 flags, , , #define BASS_DEVICE_3D   4 // enable 3D functionality
+    .参数 win
+    .参数 dsguid
+
+.DLL命令 BASS_Free, 逻辑型, "bass.dll", "BASS_Free"
+
+.DLL命令 BASS_ChannelPlay, 逻辑型, "bass.dll", "BASS_ChannelPlay"
+    .参数 handle
+    .参数 restart, 逻辑型
+
+.DLL命令 BASS_ChannelStop, 逻辑型, "bass.dll", "BASS_ChannelStop"
+    .参数 handle
+
+.DLL命令 BASS_ChannelPause, 逻辑型, "bass.dll", "BASS_ChannelPause"
+    .参数 handle
+
+.DLL命令 BASS_StreamFree, 逻辑型, "bass.dll", "BASS_StreamFree"
+    .参数 handle
+
+.DLL命令 BASS_ChannelGetData, 整数型, "bass.dll", "BASS_ChannelGetData"
+    .参数 handle, 整数型
+    .参数 buffer, 小数型, 传址 数组
+    .参数 length, 整数型
+
+.DLL命令 BASS_GetCPU, 小数型, "bass.dll", "BASS_GetCPU"
+
+.DLL命令 BASS_SetVolume, 逻辑型, "bass.dll", "BASS_SetVolume"
+    .参数 volume, 小数型
+
+.DLL命令 BASS_GetVolume, 小数型, "bass.dll", "BASS_GetVolume"
+
+.DLL命令 BASS_ChannelGetLength, 长整数型, "bass.dll", "BASS_ChannelGetLength"
+    .参数 handle
+    .参数 mode
+
+.DLL命令 BASS_ChannelSetPosition, 逻辑型, "bass.dll", "BASS_ChannelSetPosition"
+    .参数 handle
+    .参数 pos, 长整数型
+    .参数 mode
+
+.DLL命令 BASS_ChannelSeconds2Bytes, 长整数型, "bass.dll", "BASS_ChannelSeconds2Bytes"
+    .参数 handle
+    .参数 pos, 双精度小数型
+
+.DLL命令 BASS_ChannelGetInfo, 逻辑型, "bass.dll", "BASS_ChannelGetInfo"
+    .参数 handle
+    .参数 info, BASS_CHANNELINFO
+
+.DLL命令 BASS_PluginLoad, 整数型, "bass.dll", "BASS_PluginLoad"
+    .参数 file, 文本型
+    .参数 flags, 整数型
+
+.DLL命令 BASS_PluginFree, 逻辑型, "bass.dll", "BASS_PluginFree"
+    .参数 handle, 整数型
+
+.DLL命令 BASS_PluginGetInfo, 整数型, "bass.dll", "BASS_PluginGetInfo"
+    .参数 handle
+
+.DLL命令 EnumDisplaySettingsA, 整数型, "user32.dll", "EnumDisplaySettingsA"
+    .参数 lpszDeviceName, 整数型
+    .参数 iModeNum, 整数型
+    .参数 lpDevMode, DevMode, 传址
