@@ -1,0 +1,167 @@
+.版本 2
+
+.数据类型 太鼓坐标
+    .成员 坐标鼓, 坐标鼓, , "1"
+    .成员 动态BPM, 小数型
+
+.数据类型 动画视频资源
+    .成员 图片, Tp_图片
+    .成员 图片名称, 文本型
+
+.数据类型 连段
+    .成员 COMBO连段缩放, 小数型
+    .成员 COMBO连段数字, 整数型
+    .成员 延迟, 小数型
+    .成员 透明度, 整数型
+    .成员 角度, 小数型
+
+.数据类型 MOD纹理
+    .成员 自动MOD, Tp_图片
+    .成员 手电筒MOD, Tp_图片
+
+.数据类型 坐标鼓
+    .成员 坐标, 小数型
+    .成员 类型, 文本型
+    .成员 自动已进行, 整数型
+    .成员 连打长度, 整数型
+    .成员 是否以打击, 逻辑型
+
+.数据类型 打击标志
+    .成员 透明度, 整数型
+    .成员 类型, 文本型
+
+.数据类型 音效播放
+    .成员 FUUCOMBO, Tp_音效
+    .成员 combo50, Tp_音效
+    .成员 combo100, Tp_音效
+    .成员 combo200, Tp_音效
+    .成员 combo300, Tp_音效
+    .成员 combo400, Tp_音效
+    .成员 combo500, Tp_音效
+    .成员 combo600, Tp_音效
+    .成员 combo700, Tp_音效
+    .成员 combo800, Tp_音效
+    .成员 combo900, Tp_音效
+    .成员 combo1000, Tp_音效
+
+.数据类型 MOD开关
+    .成员 灯光MOD, 逻辑型
+
+.数据类型 音效
+    .成员 大鼓音效, Tp_音效
+    .成员 大哒音效, Tp_音效
+
+.数据类型 难度图标
+    .成员 简单, Age_精灵
+    .成员 普通, Age_精灵
+    .成员 困难, Age_精灵
+    .成员 专家, Age_精灵
+
+.数据类型 开关
+    .成员 着色器, 逻辑型
+    .成员 柔化滤镜, 逻辑型
+
+.数据类型 动画视频
+    .成员 图片, Tp_图片
+    .成员 图片名称, 文本型
+    .成员 图片坐标X, 小数型
+    .成员 图片坐标Y, 小数型
+    .成员 图片目标坐标X, 小数型
+    .成员 图片目标坐标Y, 小数型
+    .成员 X加速度, 小数型
+    .成员 X速度, 小数型
+    .成员 Y加速度, 小数型
+    .成员 Y速度, 小数型
+    .成员 图片旋转角度, 小数型
+    .成员 起始角度, 小数型
+    .成员 旋转差值, 小数型
+    .成员 旋转速度, 小数型
+    .成员 图片横向缩放比, 小数型
+    .成员 图片纵向缩放比, 小数型
+    .成员 图片透明度, 整数型
+    .成员 图片透明度减少量, 整数型
+    .成员 图片中心X, 小数型
+    .成员 图片中心Y, 小数型
+    .成员 缩放速度Y, 小数型
+    .成员 缩放速度X, 小数型
+    .成员 起始缩放X, 小数型
+    .成员 起始缩放y, 小数型
+    .成员 目标缩放X, 小数型
+    .成员 目标缩放Y, 小数型
+    .成员 直接应用, 整数型
+    .成员 图片最终透明度, 整数型
+    .成员 移动模式, 整数型
+    .成员 缩放模式, 整数型
+    .成员 操作时间, 整数型
+    .成员 X轴翻转, 逻辑型
+    .成员 Y轴翻转, 逻辑型
+    .成员 翻转锚点, 逻辑型
+
+.数据类型 弹出太鼓
+    .成员 X坐标, 整数型
+    .成员 Y坐标, 整数型
+    .成员 类型, 文本型
+    .成员 缩放, 小数型
+
+.数据类型 BASS_CHANNELINFO
+    .成员 freq
+    .成员 chans
+    .成员 flags
+    .成员 ctype
+    .成员 origres
+    .成员 plugin
+    .成员 sample
+    .成员 filename, 文本型
+
+.数据类型 BASS_PLUGININFO
+    .成员 version, 整数型
+    .成员 formatc, 整数型
+    .成员 formats, BASS_PLUGINFORM
+
+.数据类型 BASS_PLUGINFORM
+    .成员 ctype, 整数型
+    .成员 name, 文本型
+    .成员 exts, 文本型
+
+.数据类型 DevMode
+    .成员 dmDeviceName, 字节型, , "32"
+    .成员 dmSpecVersion, 短整数型
+    .成员 dmDriverVersion, 短整数型
+    .成员 dmSize, 短整数型
+    .成员 dmDriverExtra, 短整数型
+    .成员 dmFields, 整数型
+    .成员 dmOrientation, 短整数型
+    .成员 dmPaperSize, 短整数型
+    .成员 dmPaperLength, 短整数型
+    .成员 dmPaperWidth, 短整数型
+    .成员 dmScale, 短整数型
+    .成员 dmCopies, 短整数型
+    .成员 dmDefaultSource, 短整数型
+    .成员 dmPrintQuality, 短整数型
+    .成员 dmColor, 短整数型
+    .成员 dmDuplex, 短整数型
+    .成员 dmYResolution, 短整数型
+    .成员 dmTTOption, 短整数型
+    .成员 dmCollate, 短整数型
+    .成员 dmFormName, 字节型, , "32"
+    .成员 dmLogPixels, 短整数型
+    .成员 dmBitsPerPel, 整数型
+    .成员 dmPelsWidth, 整数型
+    .成员 dmPelsHeight, 整数型
+    .成员 dmDisplayFlags, 整数型
+    .成员 dmDisplayFrequency, 整数型
+    .成员 dmICMMethod, 整数型
+    .成员 dmICMIntent, 整数型
+    .成员 dmMediaType, 整数型
+    .成员 dmDitherType, 整数型
+    .成员 dmReserved1, 整数型
+    .成员 dmReserved2, 整数型
+
+.数据类型 音乐高潮
+    .成员 开关, 逻辑型
+    .成员 时间, 文本型
+
+.数据类型 加速度差值
+    .成员 差值, 整数型
+    .成员 加速度, 整数型
+    .成员 速度, 小数型
