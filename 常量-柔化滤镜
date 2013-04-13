@@ -1,0 +1,18 @@
+sampler2D Texture0;
+float4 ps_main( float2 Tex : TEXCOORD0 ) : COLOR0
+{
+  float4 Color = 0;
+	Color += tex2D(Texture0, Tex.xy);
+	Color += tex2D(Texture0, Tex.xy + 0.001);
+	Color += tex2D(Texture0, Tex.xy + 0.001);
+	Color += tex2D(Texture0, Tex.xy + 0.001);
+	Color += tex2D(Texture0, Tex.xy + 0.001);
+	Color += tex2D(Texture0, Tex.xy + 0.001);
+	Color += tex2D(Texture0, Tex.xy + 0.001);
+	Color += tex2D(Texture0, Tex.xy + 0.001);
+	Color += tex2D(Texture0, Tex.xy + 0.000);
+	Color += tex2D(Texture0, Tex.xy + 0.000);
+	Color += tex2D(Texture0, Tex.xy + 0.000);
+	Color = Color / 11;
+	return Color;
+}
