@@ -1,0 +1,27 @@
+.版本 2
+
+.程序集 API类
+
+.子程序 取显示器刷新率, 小数型
+.局部变量 Done, 整数型
+.局部变量 DevMode, DevMode
+
+Done ＝ EnumDisplaySettingsA (0, -1, DevMode)
+.如果 (Done ＝ 1)
+    返回 (DevMode.dmDisplayFrequency)
+.否则
+    返回 (-1)
+.如果结束
+
+
+.子程序 取位深, 小数型
+.局部变量 Done, 整数型
+.局部变量 DevMode, DevMode
+
+Done ＝ EnumDisplaySettingsA (0, -1, DevMode)
+.如果 (Done ＝ 1)
+    返回 (DevMode.dmBitsPerPel)
+.否则
+    返回 (-1)
+.如果结束
+
