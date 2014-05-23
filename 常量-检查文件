@@ -1,7 +1,9 @@
-psi\ball.psi
+psi\star.psi
+psi\Soul.psi
 psi\gogostart.psi
 psi\gogostarts.psi
 psi\mouse.psi
+psi\Fire.psi
 Sound\ka_l.wav
 Sound\ka.wav
 Sound\fullcombo.wav
@@ -21,5 +23,6 @@ Sound\50combo.wav
 Sound\menuback.wav
 Sound\menuclick.wav
 Sound\menuhit.wav
+Sound\normal-slidertick.wav
 UI.pak
 Game.pak
