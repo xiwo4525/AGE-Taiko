@@ -4,15 +4,49 @@
     .参数 handle
     .参数 pos, 长整数型
 
+.DLL命令 GetLocalTime, , "kernel32.dll", "GetLocalTime", , 在lpSystemTime结构中装载本地日期和时间
+    .参数 lpSystemTime, SYSTEMTIME, , SYSTEMTIME，用于装载本地时间的结构;
+
+.DLL命令 挂起线程, 整数型, "kernel32.dll", "SuspendThread"
+    .参数 hThread, 整数型, , 线程句柄
+
+.DLL命令 SetWindowLongA, 整数型, "user32", "SetWindowLongA", , 在窗口结构中为指定的窗口设置信息。返回值Long，指定数据的前一个值。
+    .参数 hwnd, 整数型, , 备注1无法读取，请您提供该API名报易BBS中ID号klasp完善。
+    .参数 nIndex, 整数型, , 备注2无法读取，请您提供该API名报易BBS中ID号klasp完善。
+    .参数 dwNewLong, 整数型, , 备注3无法读取，请您提供该API名报易BBS中ID号klasp完善。
+
+.DLL命令 恢复线程, 整数型, "kernel32.dll", "ResumeThread", , 解除挂起
+    .参数 hThread, , , 线程句柄
+
+.DLL命令 创建线程, 整数型, "kernel32.dll", "CreateThread"
+    .参数 lpThreadAttributes, 整数型
+    .参数 dwStackSize, 整数型
+    .参数 子程序指针, 子程序指针
+    .参数 参数, 整数型
+    .参数 dwCreationFlags, 整数型
+    .参数 线程ID, 整数型, 传址
+
+.DLL命令 销毁线程, , "kernel32.dll", "TerminateThread"
+    .参数 线程ID, 整数型
+    .参数 dwExitCode, 整数型
+
 .DLL命令 BASS_ChannelGetPosition, 长整数型, "bass.dll", "BASS_ChannelGetPosition"
     .参数 handle
     .参数 mode
+
+.DLL命令 API_GetActiveWindow, 整数型, "user32", "GetActiveWindow"
 
 .DLL命令 创建时钟, 短整数型, , "SetTimer", , 开始时钟
     .参数 句柄, 整数型
     .参数 时钟ID, 短整数型
     .参数 间隔时间, 短整数型
     .参数 子程序指针, 子程序指针
+
+.DLL命令 BASS_ChannelSlideAttribute, , "bass.dll", "BASS_ChannelSlideAttribute"
+    .参数 句柄
+    .参数 参数
+    .参数 类型
+    .参数 数据
 
 .DLL命令 销毁时钟, 逻辑型, , "KillTimer", , 杀死时钟
     .参数 句柄, 整数型
@@ -44,6 +78,9 @@
     .参数 restart, 逻辑型
 
 .DLL命令 BASS_ChannelStop, 逻辑型, "bass.dll", "BASS_ChannelStop"
+    .参数 handle
+
+.DLL命令 BASS_ChannelIsActive, 整数型, "bass.dll", "BASS_ChannelIsActive"
     .参数 handle
 
 .DLL命令 BASS_ChannelPause, 逻辑型, "bass.dll", "BASS_ChannelPause"
@@ -95,3 +132,8 @@
     .参数 lpszDeviceName, 整数型
     .参数 iModeNum, 整数型
     .参数 lpDevMode, DevMode, 传址
+
+.DLL命令 BASS_ChannelSetAttribute, 逻辑型, "bass.dll", "BASS_ChannelSetAttribute", 公开, 设置通道音量
+    .参数 句柄, 整数型
+    .参数 欲置属性, 整数型
+    .参数 欲置参数, 小数型
