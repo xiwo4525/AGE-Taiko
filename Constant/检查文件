@@ -24,5 +24,11 @@ Sound\menuback.wav
 Sound\menuclick.wav
 Sound\menuhit.wav
 Sound\normal-slidertick.wav
+Sound\Welcome.wav
+Sound\WelcomeMusic.ogg
+Sound\Open.wav
+Sound\Close.wav
+Sound\Menuopen.wav
+Sound\cace.wav
 UI.pak
 Game.pak
